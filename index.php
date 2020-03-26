@@ -1,7 +1,7 @@
 <?php
 
-require 'person.php';
-require 'kindergarten.php';
+require 'Person.php';
+require 'Kindergarten.php';
 
 $husband = new Person();
 
@@ -36,7 +36,7 @@ $wife->sleep() .
 $wife->walk() . 
 $wife->embroider() . '<br><br>';
 
-
+ 
 $son = new Person();
 
 $son->setName('Сэм')
@@ -50,12 +50,11 @@ $son->getAge() . ' год<br>' .
 $son->getHeight() . 'м рост<br>' . 
 $son->getWeight() . 'кг вес <br> он может :<br>' . 
 $son->sleep() .
-$son->walk();
+$son->walk() . '<br><br>';
 
-   
-     
-
-
+$kindergarten = new Kindergarten(); 
+$kindergarten->registerChild($son);
+print_r($kindergarten->Child());
      
 
 
