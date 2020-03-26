@@ -2,6 +2,7 @@
 
 require 'Person.php';
 require 'Kindergarten.php';
+require 'FamilyHome.php';
 
 $husband = new Person();
 
@@ -51,14 +52,5 @@ $son->getHeight() . 'м рост<br>' .
 $son->getWeight() . 'кг вес <br> он может :<br>' . 
 $son->sleep() .
 $son->walk() . '<br><br>';
+echo 'Привет';
 
-$kindergarten = new Kindergarten(); 
-$kindergarten->registerChild($son);
-print_r($kindergarten->Child());
-     
-
-
-
-
-//     Теперь давай разделим механизм представления и механизм хранения информации.
-//     Тебе нужно вынести echo из класса.
