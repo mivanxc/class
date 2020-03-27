@@ -53,4 +53,5 @@ $son->getWeight() . 'кг вес <br> он может :<br>' .
 $son->sleep() .
 $son->walk() . '<br><br>';
 echo 'Привет';
+echo 'Привет1';
 
