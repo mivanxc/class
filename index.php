@@ -7,10 +7,10 @@ require 'FamilyHome.php';
 $husband = new Person();
 
 $husband->setName('Иван')
-    ->setAge(30)
-    ->setHeight(1.70)
-    ->setWeight(55)
-    ->setEat('есть мясо');
+	->setAge(30)
+	->setHeight(1.70)
+	->setWeight(55)
+	->setEat('есть мясо');
 
 echo $husband->getName() . '<br>' . 
 $husband->getAge() . ' лет<br>' . 
